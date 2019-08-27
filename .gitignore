@@ -379,3 +379,16 @@ ASALocalRun/
 *.cab
 .DS_Store
 /.project
+
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# public rsa files
+**/id_rsa.pub
