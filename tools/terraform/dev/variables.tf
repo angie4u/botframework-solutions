@@ -50,6 +50,18 @@ variable location {
     default = "koreacentral"
 }
 
+variable storage_name {
+    default = "vameetsaks"
+}
+
+variable maps_name {
+    default = "VAmeetsAKS"
+}
+
+# for service names
+variable uniquesalt {
+}
+
 resource "random_id" "unique" {
   byte_length = 4
 }

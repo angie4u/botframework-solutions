@@ -2,7 +2,7 @@ data "azurerm_client_config" "current" {}
 
 
 resource "azurerm_key_vault" "master" {
-  name                        = "${format("%s%s%s", var.master_key_vault, random_id.unique.hex, "Kv")}"
+  name                        = "${format("%s%s%s", var.master_key_vault, var.uniquesalt, "Kv")}"
   location                    = "${azurerm_resource_group.k8s.location}"
   resource_group_name         = "${azurerm_resource_group.k8s.name}"
   tenant_id                   = "${data.azurerm_client_config.current.tenant_id}"
@@ -60,7 +60,7 @@ resource "azurerm_key_vault_secret" "AppInsights" {
 # }
 
 resource "azurerm_key_vault" "motherbot" {
-  name                        = "${format("%s%s%s", var.motherbot_key_vault, random_id.unique.hex, "Kv")}"
+  name                        = "${format("%s%s%s", var.motherbot_key_vault, var.uniquesalt, "Kv")}"
   location                    = "${azurerm_resource_group.k8s.location}"
   resource_group_name         = "${azurerm_resource_group.k8s.name}"
   tenant_id                   = "${data.azurerm_client_config.current.tenant_id}"
@@ -86,7 +86,7 @@ resource "azurerm_key_vault" "motherbot" {
 }
 
 resource "azurerm_key_vault" "POISkillBot" {
-  name                        = "${format("%s%s%s", var.poi_key_vault, random_id.unique.hex, "Kv")}"
+  name                        = "${format("%s%s%s", var.poi_key_vault, var.uniquesalt, "Kv")}"
   location                    = "${azurerm_resource_group.k8s.location}"
   resource_group_name         = "${azurerm_resource_group.k8s.name}"
   tenant_id                   = "${data.azurerm_client_config.current.tenant_id}"

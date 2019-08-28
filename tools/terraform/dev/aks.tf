@@ -5,7 +5,7 @@ resource "azurerm_role_assignment" "k8scontrib" {
 }
 
 resource "azurerm_log_analytics_workspace" "loganw" {
-    name                = "${format("%s%s", var.log_analytics_workspace_name, random_id.unique.hex)}"
+    name                = "${format("%s%s", var.log_analytics_workspace_name, var.uniquesalt)}"
     location            = "${var.log_analytics_workspace_location}"
     resource_group_name = "${azurerm_resource_group.k8s.name}"
     sku                 = "${var.log_analytics_workspace_sku}"
