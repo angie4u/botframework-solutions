@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotherBot", "MotherBot\MotherBot\MotherBot.csproj", "{D71653D8-0F18-43D4-B05F-DB46E3519571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotherBot.Tests", "MotherBot\MotherBot.Tests\MotherBot.Tests.csproj", "{44F09871-5C03-478A-8789-04AB628DE3DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D71653D8-0F18-43D4-B05F-DB46E3519571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71653D8-0F18-43D4-B05F-DB46E3519571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71653D8-0F18-43D4-B05F-DB46E3519571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71653D8-0F18-43D4-B05F-DB46E3519571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F09871-5C03-478A-8789-04AB628DE3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F09871-5C03-478A-8789-04AB628DE3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F09871-5C03-478A-8789-04AB628DE3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F09871-5C03-478A-8789-04AB628DE3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD5BEF8F-0BC7-42A1-B0C1-0169B60C03D1}
+	EndGlobalSection
+EndGlobal

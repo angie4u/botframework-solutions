@@ -1,0 +1,6 @@
+# ignore appsettings.json, cognitivemodels.json and skills.json
+
+**/appsettings.json
+**/cognitivemodels.json
+**/skills.json
+
