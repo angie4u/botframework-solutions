@@ -1,0 +1,67 @@
+# Default values for test.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+namespace: poc
+
+image:
+  repository: h2floh/aadloginsample #h2floh/letsencrypt 
+  tag: latest
+  pullPolicy: IfNotPresent
+  env:
+  - name: KeyVaultName
+    value: "securewebapp-flwagner"
+  - name: CertificateName
+    value: "LetsEncrypt"
+  - name: AzureConnectionString
+    valueFrom:
+          secretKeyRef:
+            name: azuresecret
+            key: AzureConnectionString
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: LoadBalancer
+  loadBalancerIP: 52.231.24.232
+  port: 443
+  targetPort: 443
+
+ingress:
+  enabled: false
+  annotations:
+    kubernetes.io/ingress.class: traefik
+  rules:
+    endpoint: 
+      host: vameetsaks.koreacentral.cloudapp.azure.com
+      paths:
+      - path: /
+        serviceName: aadlogin
+        servicePort: 443
+
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
