@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotherBot", "MotherBot\MotherBot\MotherBot.csproj", "{D71653D8-0F18-43D4-B05F-DB46E3519571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotherBot", "MotherBot\MotherBot\MotherBot.csproj", "{D71653D8-0F18-43D4-B05F-DB46E3519571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotherBot.Tests", "MotherBot\MotherBot.Tests\MotherBot.Tests.csproj", "{44F09871-5C03-478A-8789-04AB628DE3DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotherBot.Tests", "MotherBot\MotherBot.Tests\MotherBot.Tests.csproj", "{44F09871-5C03-478A-8789-04AB628DE3DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfInterestSkill", "PoiBot\pointofinterestskill\PointOfInterestSkill.csproj", "{FA1FD33F-6C82-4B64-A7DC-9CA606AB5BA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfInterestSkillTests", "PoiBot\pointofinterestskilltests\PointOfInterestSkillTests.csproj", "{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{44F09871-5C03-478A-8789-04AB628DE3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F09871-5C03-478A-8789-04AB628DE3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F09871-5C03-478A-8789-04AB628DE3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA1FD33F-6C82-4B64-A7DC-9CA606AB5BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1FD33F-6C82-4B64-A7DC-9CA606AB5BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1FD33F-6C82-4B64-A7DC-9CA606AB5BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1FD33F-6C82-4B64-A7DC-9CA606AB5BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
