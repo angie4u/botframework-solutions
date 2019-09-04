@@ -34,20 +34,10 @@ namespace PointOfInterestSkill
     public class Startup
     {
         private bool _isProduction = false;
-
-        public Startup(IHostingEnvironment env)
+               
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddJsonFile("cognitivemodels.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"cognitivemodels.{env.EnvironmentName}.json", optional: true)
-                .AddJsonFile("skills.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"skills.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
-
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }

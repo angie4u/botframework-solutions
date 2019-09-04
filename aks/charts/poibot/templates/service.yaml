@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "poibot.fullname" . }}
+  labels:
+{{ include "poibot.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  loadBalancerIP: {{ .Values.service.loadBalancerIP }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+    - port: {{ .Values.service.sslport }}
+      targetPort: https
+      protocol: TCP
+      name: https
+  selector:
+    app.kubernetes.io/name: {{ include "poibot.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
