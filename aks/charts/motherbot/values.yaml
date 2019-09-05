@@ -17,7 +17,7 @@ image:
     valueFrom:
           secretKeyRef:
             name: azuresecret
-            key: AzureConnectionString
+            key: MotherConnectionString
 
 imagePullSecrets: 
   - name: regcred
