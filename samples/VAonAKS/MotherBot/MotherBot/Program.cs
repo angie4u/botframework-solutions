@@ -26,9 +26,9 @@ namespace MotherBot
                 //// if not standard value of 'ConnectionStrings:AppConfig' will be used
                 .ConfigurationFromAzureAppConfig()
 
-                //// The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
-                //// For this example it is not needed (no SSL calls to befriended microservices)
-                ////.ConfigureRootCAFromKeyVault()
+                // The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
+                // For this example it is not needed (no SSL calls to befriended microservices)
+                .ConfigureRootCAFromKeyVault("VmAMaster0711Kv","LocalhostK8s")
 
                 // The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
                 // Remark, if your RootCA differs from the SSL cert you should specify certificate name as a parameter
