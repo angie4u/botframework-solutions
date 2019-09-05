@@ -19,7 +19,7 @@ namespace PointOfInterestSkill
                 // The KeyVault can be specified as parameter or in ENV 'KeyVaultName'
                 // main Idea is to use Managed Identity to access the secrets in KeyVault, for non Azure Dev Environments you can specify
                 // the ENV 'AzureConnectionString' with your Application ID and Secret 'RunAs=App;AppId={AppId};TenantId={TenantId};AppKey={ClientSecret}'
-                .ConfigurationFromKeyVault("VmAPOI0711Kv")
+                .ConfigurationFromKeyVault()
 
                 //// The Azure App Service ConfigurationString is a secret and should be stored within KeyVault,
                 //// the configuration key where the ConfigurationString is stored can be specified as parameter 
