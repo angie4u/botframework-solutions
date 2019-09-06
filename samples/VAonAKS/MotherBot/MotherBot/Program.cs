@@ -28,11 +28,11 @@ namespace MotherBot
 
                 //// The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
                 //// For this example it is not needed (no SSL calls to befriended microservices)
-                ////.ConfigureRootCAFromKeyVault()
+                .ConfigureRootCAFromKeyVault("VmAMaster0711Kv","LocalhostK8s")
 
                 // The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
                 // Remark, if your RootCA differs from the SSL cert you should specify certificate name as a parameter
-                .ConfigureKestrelSSLFromKeyVault("VmAMaster0711Kv","LocalhostK8s")
+                .ConfigureKestrelSSLFromKeyVault()
                 .UseStartup<Startup>() // Note: Application Insights is added in Startup.  Disabling is also handled there.
                 .Build();
     }

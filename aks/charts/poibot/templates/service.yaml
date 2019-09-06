@@ -6,14 +6,13 @@ metadata:
 {{ include "poibot.labels" . | indent 4 }}
 spec:
   type: {{ .Values.service.type }}
-  loadBalancerIP: {{ .Values.service.loadBalancerIP }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
+      targetPort: 80
       protocol: TCP
       name: http
     - port: {{ .Values.service.sslport }}
-      targetPort: https
+      targetPort: 443
       protocol: TCP
       name: https
   selector:
