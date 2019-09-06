@@ -32,7 +32,7 @@ namespace PointOfInterestSkill
 
                 // The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
                 // Remark, if your RootCA differs from the SSL cert you should specify certificate name as a parameter
-                .ConfigureKestrelSSLFromKeyVault("VmAMaster0711Kv", "LocalhostK8s")
+                //.ConfigureKestrelSSLFromKeyVault("VmAMaster0711Kv", "LocalhostK8s")
                 .UseStartup<Startup>() // Note: Application Insights is added in Startup.  Disabling is also handled there.
                 .Build();
     }

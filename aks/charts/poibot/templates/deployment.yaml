@@ -38,13 +38,13 @@ spec:
           livenessProbe:
             httpGet:
               path: /
-              port: https
-              scheme: HTTPS
+              port: http
+              scheme: HTTP
           readinessProbe:
             httpGet:
               path: /
-              port: https
-              scheme: HTTPS
+              port: http
+              scheme: HTTP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
