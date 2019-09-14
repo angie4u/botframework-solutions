@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotherBot", "MotherBot\MotherBot\MotherBot.csproj", "{D71653D8-0F18-43D4-B05F-DB46E3519571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotherBot", "MotherBot\MotherBot\MotherBot.csproj", "{D71653D8-0F18-43D4-B05F-DB46E3519571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotherBot.Tests", "MotherBot\MotherBot.Tests\MotherBot.Tests.csproj", "{44F09871-5C03-478A-8789-04AB628DE3DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotherBot.Tests", "MotherBot\MotherBot.Tests\MotherBot.Tests.csproj", "{44F09871-5C03-478A-8789-04AB628DE3DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoSkill", "TodoBot\todoskill\ToDoSkill.csproj", "{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoSkillTest", "TodoBot\todoskilltest\ToDoSkillTest.csproj", "{29649871-770D-4DC2-B45A-145DDB118FFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{44F09871-5C03-478A-8789-04AB628DE3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F09871-5C03-478A-8789-04AB628DE3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F09871-5C03-478A-8789-04AB628DE3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29649871-770D-4DC2-B45A-145DDB118FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29649871-770D-4DC2-B45A-145DDB118FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29649871-770D-4DC2-B45A-145DDB118FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29649871-770D-4DC2-B45A-145DDB118FFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
