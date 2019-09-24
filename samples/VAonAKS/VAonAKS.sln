@@ -10,6 +10,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfInterestSkill", "PoiBot\pointofinterestskill\PointOfInterestSkill.csproj", "{FA1FD33F-6C82-4B64-A7DC-9CA606AB5BA9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfInterestSkillTests", "PoiBot\pointofinterestskilltests\PointOfInterestSkillTests.csproj", "{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoSkill", "TodoBot\todoskill\ToDoSkill.csproj", "{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoSkillTest", "TodoBot\todoskilltest\ToDoSkillTest.csproj", "{29649871-770D-4DC2-B45A-145DDB118FFF}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F30A959-1EA2-44EC-B180-378F5E3F7C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2574EC8-D0EB-495C-BEE1-FD0AAFAC4AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29649871-770D-4DC2-B45A-145DDB118FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29649871-770D-4DC2-B45A-145DDB118FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29649871-770D-4DC2-B45A-145DDB118FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29649871-770D-4DC2-B45A-145DDB118FFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
