@@ -13,6 +13,10 @@ image:
     value: "VmAMotherBot0711Kv"
   - name: CertificateName
     value: "LetsEncrypt"
+  - name: MasterKeyVault
+    value: "VmAMaster0711Kv"
+  - name: "CACertificate"
+    value: "LocalhostK8s"
   - name: AzureConnectionString
     valueFrom:
           secretKeyRef:

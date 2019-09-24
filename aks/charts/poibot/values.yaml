@@ -11,7 +11,9 @@ image:
   env:
   - name: KeyVaultName
     value: "VmAPOI0711Kv"
-  - name: CertificateName
+  - name: MasterKeyVault
+    value: "VmAMaster0711Kv"
+  - name: "SSLCertificate"
     value: "LocalhostK8s"
   - name: AzureConnectionString
     valueFrom:

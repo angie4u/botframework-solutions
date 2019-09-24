@@ -4,11 +4,15 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using CSE.SecureWebServerHelper;
+using System;
 
 namespace PointOfInterestSkill
 {
     public class Program
     {
+        static string MasterKv = Environment.GetEnvironmentVariable("MasterKeyVault");
+        static string SSLCertificate = Environment.GetEnvironmentVariable("SSLCertificate");
+
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
@@ -32,7 +36,7 @@ namespace PointOfInterestSkill
 
                 // The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
                 // Remark, if your RootCA differs from the SSL cert you should specify certificate name as a parameter
-                //.ConfigureKestrelSSLFromKeyVault("VmAMaster0711Kv", "LocalhostK8s")
+                .ConfigureKestrelSSLFromKeyVault(MasterKv, SSLCertificate)
                 .UseStartup<Startup>() // Note: Application Insights is added in Startup.  Disabling is also handled there.
                 .Build();
     }
