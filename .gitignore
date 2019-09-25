@@ -392,3 +392,6 @@ ASALocalRun/
 
 # public rsa files
 **/id_rsa.pub
+
+#OpenJDK Project File
+**/android/**/.project

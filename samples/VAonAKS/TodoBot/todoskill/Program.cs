@@ -10,16 +10,13 @@ namespace ToDoSkill
 {
     public class Program
     {
+        static string MasterKv = Environment.GetEnvironmentVariable("MasterKeyVault");
+        static string SSLCertificate = Environment.GetEnvironmentVariable("SSLCertificate");
+
         public static void Main(string[] args)
         {
-            Environment.SetEnvironmentVariable("keyVault", "VmAMaster0711Kv");
-            Environment.SetEnvironmentVariable("certificate", "LocalhostK8s");
-
             BuildWebHost(args).Run();
         }
-
-        static string MasterKv = Environment.GetEnvironmentVariable("keyVault");
-        static string LocalCertificate = Environment.GetEnvironmentVariable("certificate");
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
@@ -39,7 +36,7 @@ namespace ToDoSkill
 
                 // The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
                 // Remark, if your RootCA differs from the SSL cert you should specify certificate name as a parameter
-                .ConfigureKestrelSSLFromKeyVault(MasterKv, LocalCertificate)
+                .ConfigureKestrelSSLFromKeyVault(MasterKv, SSLCertificate)
                 .UseStartup<Startup>() // Note: Application Insights is added in Startup.  Disabling is also handled there.
                 .Build();
     }

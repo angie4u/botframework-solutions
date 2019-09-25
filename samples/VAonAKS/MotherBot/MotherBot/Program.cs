@@ -12,14 +12,11 @@ namespace MotherBot
     {
         public static void Main(string[] args)
         {
-            Environment.SetEnvironmentVariable("keyVault", "VmAMaster0711Kv");
-            Environment.SetEnvironmentVariable("certificate", "LocalhostK8s");
-
             BuildWebHost(args).Run();
         }
 
-        static string MasterKv = Environment.GetEnvironmentVariable("keyVault");
-        static string LocalCertificate = Environment.GetEnvironmentVariable("certificate");
+        static string MasterKv = Environment.GetEnvironmentVariable("MasterKeyVault");
+        static string CACertificate = Environment.GetEnvironmentVariable("CACertificate");
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
@@ -33,9 +30,10 @@ namespace MotherBot
                 //// if not standard value of 'ConnectionStrings:AppConfig' will be used
                 .ConfigurationFromAzureAppConfig()
 
+
                 // The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
                 // For this example it is not needed (no SSL calls to befriended microservices)
-                .ConfigureRootCAFromKeyVault(MasterKv, LocalCertificate)
+                .ConfigureRootCAFromKeyVault(MasterKv, CACertificate)
 
                 // The KeyVault and Certificate Name can be specified as parameters or in ENV 'KeyVaultName' and ENV 'CertificateName'
                 // Remark, if your RootCA differs from the SSL cert you should specify certificate name as a parameter

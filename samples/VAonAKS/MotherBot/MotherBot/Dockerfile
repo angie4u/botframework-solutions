@@ -8,7 +8,8 @@ RUN dotnet restore
 
 # copy everything else and build
 COPY . ./
-RUN rm *.json
+RUN rm appsettings.json -f
+RUN rm cognitivemodels.json -f
 RUN dotnet publish -c Release -o out
 
 # build runtime image /aspnet -> ASP.NET /runtime -> .NET Core

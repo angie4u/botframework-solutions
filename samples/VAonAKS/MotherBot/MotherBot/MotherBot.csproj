@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="AdaptiveCards" Version="1.2.0" />
-    <PackageReference Include="CSE.SecureWebServerHelper" Version="0.1.4" />
+    <PackageReference Include="CSE.SecureWebServerHelper" Version="0.1.5-preview" />
     <PackageReference Include="Microsoft.ApplicationInsights" Version="2.10.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.7.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.10.0" />
@@ -116,6 +116,6 @@
     </Content>
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>

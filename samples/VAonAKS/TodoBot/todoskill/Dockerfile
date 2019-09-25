@@ -9,8 +9,8 @@ RUN dotnet restore
 # copy everything else and build
 COPY . ./
 # remove configuration files from dockerfile
-RUN rm appsettings.json
-RUN rm cognitivemodels.json
+RUN rm appsettings.json -f
+RUN rm cognitivemodels.json -f
 RUN dotnet publish -c Release -o out
 
 # build runtime image /aspnet -> ASP.NET /runtime -> .NET Core
