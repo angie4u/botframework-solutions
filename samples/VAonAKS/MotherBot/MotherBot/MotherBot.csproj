@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="AdaptiveCards" Version="1.2.0" />
-    <PackageReference Include="CSE.SecureWebServerHelper" Version="0.1.5-preview" />
+    <PackageReference Include="CSE.SecureWebServerHelper" Version="0.1.6-preview" />
     <PackageReference Include="Microsoft.ApplicationInsights" Version="2.10.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.7.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.10.0" />
