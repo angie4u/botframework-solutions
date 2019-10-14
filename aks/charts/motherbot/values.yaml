@@ -30,7 +30,6 @@ fullnameOverride: ""
 
 service:
   type: LoadBalancer
-  loadBalancerIP: 52.231.24.232
   port: 80
   sslport: 443
 
