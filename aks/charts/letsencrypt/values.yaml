@@ -20,9 +20,6 @@ service:
   port: 443
   targetPort: 443
 
-ingress:
-  enabled: false
-
 
   tls: []
   #  - secretName: chart-example-tls
