@@ -1,7 +1,0 @@
-dashboard:
-  enabled: true
-  domain: vameetsaks.koreacentral.cloudapp.azure.com
-kubernetes:
-  namespaces:
-    - default
-    - kube-system
